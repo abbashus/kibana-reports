@@ -49,7 +49,7 @@ apply plugin: 'jacoco'
 apply plugin: 'idea'
 apply plugin: 'elasticsearch.esplugin'
 apply plugin: 'elasticsearch.testclusters'
-apply plugin: 'io.gitlab.arturbosch.detekt'
+// apply plugin: 'io.gitlab.arturbosch.detekt'
 apply plugin: 'org.jetbrains.kotlin.jvm'
 apply plugin: 'org.jetbrains.kotlin.plugin.allopen'
 
@@ -73,10 +73,10 @@ configurations {
     ktlint
 }
 
-detekt {
-    config = files("detekt.yml")
-    buildUponDefaultConfig = true
-}
+//detekt {
+//    config = files("detekt.yml")
+//    buildUponDefaultConfig = true
+//}
 
 configurations.testCompile {
     exclude module: "securemock"
